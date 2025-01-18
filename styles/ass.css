@@ -18,47 +18,63 @@
     padding: 30px,15px;
     border-color: rgb(22, 105, 22);
  }
- .banner-title{
-   font-weight: bold;
-   font: size 45px; 
-   align-items: first baseline;
-   
- }
- /*banner style*/
- .banner{
-   display: flex;
-   justify-content: space-between;
- }
- .banner-content{
-   max: width 500px; 
-   margin:0 20px 0 100px;
- }
- 
-  banner-greetings{
-   font-weight: 100;
-   color: rgb(124, 113, 113);
- }
- .banner-profile-pic{
-   width: 470.99px;
-   height: 400px;
- }
- .banner-description{
-font: size 662px; 
-align-items: center;
+ body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  border: #45a049;
+}
 
- }
- .secondary-bg{
- background-color: aquamarine;
- }
- /*main styles*/
- main{
-  max-width: 1140px;
-  margin: 0 auto;
- }
- main section{
-  margin-top: 130px;
-  margin-bottom: 130px;
- }
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#e3f9e5; ; 
+  padding: 20px;
+}
+
+.banner-content {
+  max-width: 60%;
+}
+
+.banner-content h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #333;
+}
+.banner h1{
+  text-align: start;
+  font-size: medium;
+  color: #555;
+}
+.banner p{
+  text-align: center;
+  font-size:x-large;
+  color: black;
+}
+.banner-content p {
+  margin: 10px 0 0;
+  color: #666;
+}
+
+.banner-image img {
+  max-width: 100%;
+  height: auto;
+}
+.banner button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(17, 85, 17, 0.896);
+  color: white;
+}
+
+.banner li{
+  list-style: none;
+  display: flow-root;
+}
  /*skill section*/
  .skills-container{
   display: flex;
@@ -136,78 +152,88 @@ align-items: center;
   color: white;
 }
 
-* {
+
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  align-items: first baseline;
+  background-color: #f9f9f9;
 }
 
 .recent-news {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-h2 {
-  text-align: start;
-  margin-bottom: 40px;
-  font-size: 2.5rem;
-}
-section class="news-card">
-  <div class="card-image
-  <img src="https://via.placeholder.com/300" alt="news-image">
-  display: flex;
 .news-card {
   display: flex;
-  margin-bottom: 20px;
+  align-items: center;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
-.news-card.reverse {
-  flex-direction: row-reverse;
-}
-.card-image img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
+.news-card.card-1 .news-image {
+  order: 0;
 }
 
-.card-content {
+.news-card.card-2 .news-image {
+  order: 1;
+}
+
+.news-image {
+  width: 40%;
+  height: auto;
+}
+
+.news-content {
   padding: 20px;
   flex: 1;
 }
 
-.card-content h3 {
-  font-size: 1.8rem;
+.news-title {
+  font-size: 1.5rem;
   margin-bottom: 10px;
+  color: #333;
 }
 
-.card-content p.news-details {
+.news-details {
   font-size: 1rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: #555;
 }
 
-.news-meta {
+.news-info {
   display: flex;
- align-items: center;
-  margin-bottom: 10px;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.channel-logo {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
+
+
+
+.read-more {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
+
+.read-more:hover {
+  background-color: #0056b3;
+}
+
+
 
 
 /* General reset */
@@ -220,12 +246,12 @@ section class="news-card">
 /* Body and container styling */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  
   padding: 20px;
 }
 
 .donate-section {
-  background-color: #fff;
+ 
   padding: 40px;
   text-align: center;
   border-radius: 10px;
@@ -361,4 +387,12 @@ body {
   background-color: aquamarine; /* Background color */
   padding: 50px 0;
   text-align: center;
+}
+.newsletter-section {
+  background-color: rgb(165, 220, 202);
+  padding: 50px 0;
+  text-align: center;
+  border: #777;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
 }
